@@ -61,5 +61,5 @@ Article.fetchAll = () => {
   }
 }
 
-//COMMENT: Explain how you and your partner determined the sequence of code execution.
-//
+//DONE: Explain how you and your partner determined the sequence of code execution.
+//Our fetchAll() method first checks if "rawData" exists in local storage, and if so it uses the loadAll() method to GET the rawData from local storage and parse it, then passes the initIndexPage() method to render the articles to the page. The else statement first grabs the rawData from the data directory by searching for its url, then sets it to local storage for the next page load.
